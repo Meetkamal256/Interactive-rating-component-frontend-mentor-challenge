@@ -60,18 +60,31 @@ p{
 .ratings{
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px;
-    margin-bottom: 15px;
+    padding: 20px 0;
 }
 
-.rating{
+.rating button{
     background-color: hsla(216, 12%, 54%, 0.1);
     padding: 15px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     height: 100%;
     width: 100%;
     text-align: center;
     margin: 0px 7px;
+    color: #fff;
+}
+
+.rating button:hover{
+    background-color: var(--Orange);
+    cursor: pointer;
+    color: #fff;
+}
+
+.rating button:focus{
+    background-color: var(--Medium-Grey);
+    color: #fff;
 }
 
 button{
@@ -80,25 +93,67 @@ button{
     border-radius: 20px;
     padding: 15px;
     border: none;
-    color: var(--White)
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
+button:hover{
+    background-color: var(--White);
+    cursor: pointer;
+    color: var(--Orange);
+}
+
+/* thankyou card section */
+
+
+.thankyoucard{
+    max-width: 400px;
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 3rem 2rem;
+    text-align: center;
+}
+
+
+.thankyoucard .select p{
+    margin: 20px 0;
+    color: var(--White);
+    background-color: hsla(216, 12%, 54%, 0.1); 
+    border-radius: 15px;
+    width: 170px;
+    color: var(--Orange);
+    padding: 7px;
+    font-weight: 400;
+    opacity: 0.8;
+    position: relative;
+    left: 100px
+}
+
+h1{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+
 
 /* responsive styles */
 
-@media (max-width: 576px){
+@media (max-width: 425px){
     .card{
-        max-width: 350px;
+        max-width: 300px;
         padding: 30px;
         margin: 3rem 2rem;
     }
-
-    .rating{
-    background-color: hsla(216, 12%, 54%, 0.1);
-    padding: 5px;
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 0px 7px;
+    .rating button{
+        height: 40px;
+        width: 40px;
+        margin: 0px 5px;
+        font-size: 12px;
 }
+
 }
