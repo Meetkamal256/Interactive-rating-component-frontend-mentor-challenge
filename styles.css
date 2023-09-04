@@ -18,21 +18,18 @@
 
 body{
     font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
     font-size: 15px;
-}
-
-#main-container, #thanks-container{
-        background-color: var(--Very-Dark-Blue);
-        color: #fff;
-        display: flex;
-        align-items: center;
-        min-height: 100vh;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .card{
     max-width: 400px;
     background-color: var(--Dark-Blue);
+    color: #fff;
     border-radius: 15px;
     padding: 30px;
     margin: 3rem 2rem;
@@ -96,6 +93,8 @@ button{
     color: var(--White);
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-family: inherit;
+    transition: 0.3s;
 }
 
 button:hover{
@@ -104,40 +103,40 @@ button:hover{
     color: var(--Orange);
 }
 
-/* thankyou card section */
+/* ratings section */
 
 
-.thankyoucard{
-    max-width: 400px;
-    background-color: var(--Dark-Blue);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 3rem 2rem;
-    text-align: center;
+
+.thanks-container .card{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.thanks-container .card img{
+    margin-bottom: 20px;
+}
 
-.thankyoucard .select p{
-    margin: 20px 0;
-    color: var(--White);
-    background-color: hsla(216, 12%, 54%, 0.1); 
-    border-radius: 15px;
-    width: 170px;
+.thanks-container .card p.select{
+    background-color: hsla(216, 12%, 54%, 0.1);
     color: var(--Orange);
-    padding: 7px;
-    font-weight: 400;
-    opacity: 0.8;
-    position: relative;
-    left: 100px
+    border-radius: 20px;
+    padding: 7px 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
-h1{
-    font-weight: 700;
+.thanks-container .card h2{
+    margin-bottom: 15px;
 }
 
-p{
-    font-weight: 400;
+.hidden{
+    display: none;
 }
+
+
 
 
 
@@ -149,6 +148,7 @@ p{
         padding: 30px;
         margin: 3rem 2rem;
     }
+    
     .rating button{
         height: 40px;
         width: 40px;
