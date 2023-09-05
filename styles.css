@@ -71,7 +71,7 @@ p{
     text-align: center;
     margin: 0px 7px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .rating button:hover{
@@ -103,6 +103,7 @@ button:hover{
     cursor: pointer;
     color: var(--Orange);
 }
+
 
 /* ratings section */
 
