@@ -57,17 +57,17 @@ p{
 .ratings{
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0;
 }
 
 .rating button{
     background-color: hsla(216, 12%, 54%, 0.1);
     padding: 15px;
-    height: 50px;
-    width: 50px;
+    height: 3.33rem;
+    width: 3.33rem;
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
     text-align: center;
     margin: 0px 7px;
     color: #fff;
@@ -88,7 +88,7 @@ button{
     background-color: var(--Orange);
     width: 100%;
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px;
     border: none;
     color: var(--White);
     text-transform: uppercase;
@@ -107,12 +107,11 @@ button:hover{
 
 
 
-.thanks-container .card{
-    text-align:center;
+.thanks-container .card { 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .thanks-container .card img{
@@ -123,7 +122,7 @@ button:hover{
     background-color: hsla(216, 12%, 54%, 0.1);
     color: var(--Orange);
     border-radius: 20px;
-    padding: 7px 20px;
+    padding: 7px 15px;
     font-size: 14px;
     margin-bottom: 20px;
 }
